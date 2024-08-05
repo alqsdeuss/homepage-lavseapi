@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta property="og:title" content="lavse api homepage">
+    <meta property="og:image" content="https://cdn.discordapp.com/avatars/1110137333736558662/6c1f33db73e959914f7194a17982da5d.webp?size=1024&format=webp&width=0&height=320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="an lavse api hompage cards ok">
+    <meta name="twitter:site" content="@yourTwitterHandle">
+    <meta property="og:description" content="an lavse api hompage cards ok">
+    <meta name="description" content="an lavse api hompage cards ok">
+    <title>lavse api homepage</title>
+    <link rel="icon" href="https://cdn.discordapp.com/avatars/1110137333736558662/6c1f33db73e959914f7194a17982da5d.webp?size=1024&format=webp&width=0&height=320">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #121212, #1E1E1E);
+            background-size: 300% 300%;
+            color: #D3D3D3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            transition: background-position 0.2s ease-out;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            width: 80%;
+            justify-content: space-between;
+        }
+        .title {
+            font-size: 4em;
+            font-weight: bold;
+            animation: fadeInOut 3s infinite;
+        }
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            50% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .line {
+            width: 2px;
+            height: 80vh;
+            background-color: #333;
+            margin: 0 20px;
+        }
+        .security-items {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .security-item {
+            display: flex;
+            align-items: center;
+            background-color: #1E1E1E;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 400px;
+            transition: transform .3s ease;
+        }
+        .security-item:hover {
+            transform: scale(1.05);
+        }
+        .security-item img {
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+        }
+        .security-item .content {
+            display: flex;
+            flex-direction: column;
+        }
+        .security-item .content .title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0;
+        }
+        .security-item .content .description {
+            font-size: 1em;
+        }
+        .status {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .status img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .status div {
+            font-size: 1.2em;
+            margin-right: 20px;
+        }
+    </style>
+    <script>
+        document.addEventListener('mousemove', function(e) {
+            const x = e.clientX;
+            const y = e.clientY;
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            const xPercent = x / width * 100;
+            const yPercent = y / height * 100;
+            
+            document.body.style.backgroundPosition = `${xPercent}% ${yPercent}%`;
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'C'))) {
+                e.preventDefault();
+                alert('ok no what the hell are you trying to do?');
+            }
+        });
+
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            alert('ok no what the hell are you trying to do?');
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">lavse api homepage</div>
+        <div class="line"></div>
+        <div class="security-items">
+            <div class="security-item">
+                <img src="https://cdn3.emoji.gg/emojis/59469-white-flower.png" alt="icn">
+                <div class="content">
+                    <div class="title">info api</div>
+                    <div class="description">our api are very easy to use and you can integrate them into your codes</div>
+                </div>
+            </div>
+            <div class="security-item">
+                <img src="https://cdn3.emoji.gg/emojis/71423-red-flower.png" alt="icn">
+                <div class="content">
+                    <div class="title">security api</div>
+                    <div class="description">our api security is pretty high and nothing bad can happen to your bot</div>
+                </div>
+            </div>
+            <div class="security-item">
+                <img src="https://cdn3.emoji.gg/emojis/54730-yellow-flower.png" alt="icn">
+                <div class="content">
+                    <div class="title">infs api</div>
+                    <div class="description">our api are valid for: python/js/bdfd/aoi.js</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
